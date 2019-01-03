@@ -93,7 +93,22 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-
+    </div>
+    <div id="hot" class="container mt-5 text-center">
+      <span class="title">Box Bán Chạy</span>
+      <div class="swiper-container hot mt-3" id="productHot">
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div id="new" class="container mt-5 text-center">
+      <span class="title">Mua Lẻ Mới Nhất</span>
+      <div class="swiper-container new mt-3" id="productNew">
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
   </div>
 
@@ -106,7 +121,9 @@
   <script src="./data/data.js"></script>
   <script src="./js/main.js"></script>
   <script>
-    showProductHotDeal()
+    showProduct()
+    showProduct('productHot','hot')
+    showProduct('productNew','new')
   </script>
 </body>
 

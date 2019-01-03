@@ -26,7 +26,7 @@ const numberWithDots = x => {
 };
 
 
-function showProductHotDeal(limit = 20) {
+function showProduct(id='productHotDeal',root='hotdeal',limit = 20) {
     let arr = ''
     for (let i = 0; i < limit; i++) {
         let idProduct = Math.floor((Math.random() * (data.length - 1)) + 0)
@@ -67,8 +67,8 @@ function showProductHotDeal(limit = 20) {
     let swiperWrapper = document.createElement('div')
     swiperWrapper.classList.add("swiper-wrapper")
     swiperWrapper.innerHTML = arr
-    document.getElementById('productHotDeal').appendChild(swiperWrapper);
-    var swiper = new Swiper('.hotdeal', {
+    document.getElementById(id).appendChild(swiperWrapper);
+    var swiper = new Swiper('.'+root, {
         slidesPerView: 5,
         spaceBetween: 10,
         slidesPerGroup: 5,
