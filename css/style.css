@@ -1,0 +1,36 @@
+.sign-in {
+    cursor: pointer;
+    transition: all 0.2s ease-out 0s;
+}
+
+.sign-in:hover {
+    color: #007bff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+nav a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    line-height: 44px;
+    font-family: avenir-next-medium, arial;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 44px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #007bff
+}
