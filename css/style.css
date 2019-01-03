@@ -67,3 +67,31 @@ nav a:hover {
     color: rgb(0, 0, 0);
     letter-spacing: -0.5px;
 }
+
+.swiper-container .swiper-button-prev {
+    width: 40px;
+    height: 60px;
+    opacity: 0;
+    transform: translate(-60px, -50%);
+    visibility: hidden;
+}
+
+.swiper-container:hover .swiper-button-prev {
+    opacity: 1;
+    transform: translate(1px, -50%);
+    visibility: visible;
+}
+
+.swiper-container .swiper-button-next {
+    width: 40px;
+    height: 60px;
+    opacity: 0;
+    transform: translate(60px, -50%);
+    visibility: hidden;
+}
+
+.swiper-container:hover .swiper-button-next {
+    opacity: 1;
+    transform: translate(1px, -50%);
+    visibility: visible;
+}
