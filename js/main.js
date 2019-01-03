@@ -25,14 +25,15 @@ const numberWithDots = x => {
     }
 };
 
-showProductHotDeal()
 
 function showProductHotDeal(limit = 20) {
     let arr = ''
     for (let i = 0; i < limit; i++) {
         let idProduct = Math.floor((Math.random() * (data.length - 1)) + 0)
         console.log(idProduct)
-        temp = `<div class="swiper-slide">
+        temp = `
+        <div class="swiper-slide">
+        <a href="/pages/details.html#` + data[idProduct].id + `" style="text-decoration: none;color:black">
         <img src="./images/` + data[idProduct].image + `" alt="" width="100%">
         <div class="row">
           <div class="col-10 text-left">
@@ -60,7 +61,7 @@ function showProductHotDeal(limit = 20) {
               </g>
             </svg>
           </div>
-        </div></div>`
+        </div></div></a>`
         arr += temp
     }
     let swiperWrapper = document.createElement('div')
