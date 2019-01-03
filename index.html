@@ -20,11 +20,11 @@
             <h3 class="m-0 p-0" style="letter-spacing: 5px">VIVIBOX</h3>
           </div>
           <div class="col-7">
-            <div class="input-group">
+            <div class="input-group rounded-pill">
               <div class="input-group-prepend">
-                <div class="input-group-text"></div>
+                <div class="input-group-text rounded-pill" style="border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"><img src="./images/icon/search.svg " alt="" width="15px"></div>
               </div>
-              <input type="text" class="form-control"  placeholder="Vui lòng nhập sản phẩm cần tìm ......">
+              <input type="text" class="form-control rounded-pill" style="border-bottom-left-radius:0!important;border-top-left-radius:0!important;border-left:none;background: rgb(247, 249, 250)"  placeholder="Tìm kiếm">
             </div>
           </div>
           <div class="col-3">
@@ -36,12 +36,32 @@
             </div>
           </div>
         </div>
-        <nav class="mt-4">
-          <a href="#beauty-box">SHOP</a>
-          <a href="#new-beauty-box">NEW</a>
-          <a href="#">BEST DEALS</a>
-          <a href="#">BRAND</a>
-          <a href="#magazine">MAGAZINE</a>
+        <nav class="mt-4 dropdown">
+          <a href="#" role="button" class="dropdown-toggle" id="dropdownMenuShop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOP</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuShop">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          <a href="#new-beauty-box" class="dropdown-toggle" id="dropdownMenuNEW" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEW</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuNEW">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          <a href="#" class="dropdown-toggle" id="dropdownMenuBESTDEALS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BEST DEALS</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuBESTDEALS">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          <a href="#" >BRAND</a>
+          <a href="#magazine" class="dropdown-toggle" id="dropdownMenuMAGAZINE" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MAGAZINE</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuMAGAZINE">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           <a href="#community">COMMUNITY</a>
         </nav>
 
@@ -54,6 +74,7 @@
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
