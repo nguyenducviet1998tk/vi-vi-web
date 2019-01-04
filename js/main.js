@@ -81,7 +81,7 @@ function showProduct(id = 'productHotDeal', root = 'hotdeal', limit = 20) {
     });
 }
 
-function showStartRate(params,link='./') {
+function showStartRate(params, link = './') {
     var rating = "";
     for (let j = 1; j <= 5; j++) {
         let eli = document.createElement('img');
@@ -89,14 +89,14 @@ function showStartRate(params,link='./') {
         eli.height = "14"
         if (Math.ceil(params) >= j) {
             if (params > j) {
-                eli.src = link+"images/icon/start.svg"
+                eli.src = link + "images/icon/start.svg"
                 rating += eli.outerHTML;
             } else {
-                eli.src =link+"images/icon/start-half.svg"
+                eli.src = link + "images/icon/start-half.svg"
                 rating += eli.outerHTML;
             }
         } else {
-            eli.src = link+"images/icon/start-null.svg"
+            eli.src = link + "images/icon/start-null.svg"
             rating += eli.outerHTML;
         }
     }
@@ -110,41 +110,43 @@ function changerColorBorder(params) {
         document.getElementById('iconSearch').style = "border-color: #ced4da;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
     }
 }
-function getData(params){
+
+function getData(params) {
     for (let i = 0; i < data.length; i++) {
-        if (data[i].id==params) {
+        if (data[i].id == params) {
             return data[i];
         }
-        
+
     }
 }
+
 function detail(params) {
     let hash = location.hash;
     let id = hash.split("#");
-    data = getData(id[1])
+    let dataa = getData(id[1])
     console.log(data)
     document.getElementById('detail').innerHTML = ` <div class="top-overview row">
     <div class="col-md-8">
-      <img src="../images/`+data.image+`" width="100%" height="495px" alt="" />
+      <img src="../images/` + dataa.image + `" width="100%" height="495px" alt="" />
     </div>
     <div class="col-md-4">
-      <h2>`+data.name+`</h2>
+      <h2>` + dataa.name + `</h2>
       <div class="row">
-        <div class="col-4"><h2>`+numberWithDots(data.price)+`</h2></div>
+        <div class="col-4"><h2>` + numberWithDots(dataa.price) + `</h2></div>
         <div class="col-4">
           <p
             class="text-center"
             style="margin: 8px; text-decoration: line-through"
           >
-          `+numberWithDots(data.original)+`
+          ` + numberWithDots(dataa.original) + `
           </p>
         </div>
       </div>
       <div class="row">
-        <p class="col-6">`+showStartRate(data.rate,'../')+` `+data.comment+` đánh giá</p>
+        <p class="col-6">` + showStartRate(dataa.rate, '../') + ` ` + dataa.comment + ` đánh giá</p>
         <p class="col-1">/</p>
         <p class="col-5">
-          <i style="color:#ff3333" class="fas fa-heart"></i> `+data.like+`  lovers
+          <i style="color:#ff3333" class="fas fa-heart"></i> ` + dataa.like + `  lovers
         </p>
       </div>
       <div
@@ -179,7 +181,88 @@ function detail(params) {
           </div>
           <div class="clearfix"></div>
         </div>
+        
       </div>
+      <div class="row mt-4">
+            <div class="col-6 pr-1" id="buttonAddProduct">
+                 `+checkProduct(dataa.id)+`
+                
+            </div>
+            <div class="col-6 pl-1">
+                <button type="button" class="btn btn-light btn-block ">Yêu thích</button>
+            </div>
+        </div>
     </div>
   </div>`
+}
+function checkProduct(params = 1){
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.getItem('cart') == null) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        let temp = JSON.parse(localStorage.getItem('cart'));
+        for (let i = 0; i < temp.length; i++) {
+            if (temp[i]==params) {
+                return '<button type="button" class="btn btn-danger btn-block" disabled >Đã thêm</button>'
+            }            
+        }
+        let str = '<button type="button" class="btn btn-danger btn-block" onclick="addProduct('+params+')">Thêm vào giỏ</button>'
+        return str;
+    } 
+}
+function addProduct(params = 1) {
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.getItem('cart') == null) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        let temp = JSON.parse(localStorage.getItem('cart'));
+        temp.push(params);
+        localStorage.setItem('cart', JSON.stringify(temp));
+        location.reload();
+    } 
+}
+function deleteLocal() {
+    if (typeof (Storage) !== "undefined") {
+        console.log(localStorage.getItem('cart'))
+        if (JSON.parse( localStorage.getItem('cart')).length>0) {
+            localStorage.setItem('cart', JSON.stringify([]));
+            alert('Cám ơn bạn đã mua hàng!')
+            location.reload();
+            return;
+        }
+        alert('Bạn vui lòng thêm sản phẩm!')
+        return;
+    } 
+}
+
+function showCart(link='./') {
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.getItem('cart') == null) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        let temp = JSON.parse(localStorage.getItem('cart'));
+        for (let i = 0; i < temp.length; i++) {
+            let divc = document.createElement('div')
+            divc.classList.add("media")
+            let dataa = getData(temp[i])
+            divc.innerHTML = `<img src="`+link+`images/`+dataa.image+`" class="mr-3" alt="..." width="74px" height="74px">
+            <div class="media-body">
+              <a href="./pages/details.html#`+dataa.id+`" style="text-decoration: none">
+                <h5 class="mt-0">`+dataa.name+`</h5>
+              </a>
+              `+numberWithDots(dataa.price) +` <span style="font-size: 13px;text-decoration: line-through">`+numberWithDots(dataa.original)+`</span>
+            </div>`
+            document.getElementById('cart-popup').appendChild(divc);
+        }
+    } 
+ 
+}
+function updateCart() {
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.getItem('cart') == null) {
+            localStorage.setItem('cart', JSON.stringify([]));
+        }
+        let temp = JSON.parse(localStorage.getItem('cart'));
+        document.getElementById('cartNumber').innerHTML=  temp.length
+    } 
 }
