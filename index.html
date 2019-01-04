@@ -1,134 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./images/logo-mini.jpg" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="./images/logo-mini.jpg">
-  <title>Trang chủ</title>
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/swiper.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <div id="app">
-    <div id="navbar" style="z-index: 3">
-      <div class="container pt-3">
-        <div class="row" style="height:38px">
-          <div class="col-2">
-            <h3 class="m-0 p-0" style="letter-spacing: 5px">VIVIBOX</h3>
-          </div>
-          <div class="col-7">
-            <div class="input-group rounded-pill">
-              <div class="input-group-prepend">
-                <div class="input-group-text rounded-pill" style="border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"><img
-                    src="./images/icon/search.svg " alt="" width="15px"></div>
+  <body>
+    <div id="app">
+      <div id="navbar" style="z-index: 3">
+        <div class="container pt-3">
+          <div class="row" style="height:38px">
+            <div class="col-2">
+              <h3 class="m-0 p-0" style="letter-spacing: 5px">VIVIBOX</h3>
+            </div>
+            <div class="col-7">
+              <div class="input-group rounded-pill">
+                <div class="input-group-prepend">
+                  <div
+                    class="input-group-text rounded-pill"
+                    style="border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+                  >
+                    <img src="./images/icon/search.svg " alt="" width="15px" />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  style="border-bottom-left-radius:0!important;border-top-left-radius:0!important;border-left:none;background: rgb(247, 249, 250)"
+                  placeholder="Tìm kiếm"
+                />
               </div>
-              <input type="text" class="form-control rounded-pill" style="border-bottom-left-radius:0!important;border-top-left-radius:0!important;border-left:none;background: rgb(247, 249, 250)"
-                placeholder="Tìm kiếm">
+            </div>
+            <div class="col-3">
+              <div class="d-inline ml-4">
+                <span class="align-middle sign-in" style="line-height:38px;"
+                  >Đăng nhập / Đăng ký</span
+                >
+              </div>
+              <div class="d-inline ml-5">
+                <img
+                  src="./images/icon/shopping-bag.svg"
+                  alt=""
+                  width="26px"
+                  height="100%"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+          <nav class="mt-4 dropdown">
+            <a
+              href="#"
+              role="button"
+              class="dropdown-toggle"
+              id="dropdownMenuShop"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >SHOP</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuShop">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <a
+              href="#new-beauty-box"
+              class="dropdown-toggle"
+              id="dropdownMenuNEW"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >NEW</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuNEW">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="dropdownMenuBESTDEALS"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >BEST DEALS</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuBESTDEALS">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <a href="#">BRAND</a>
+            <a
+              href="#magazine"
+              class="dropdown-toggle"
+              id="dropdownMenuMAGAZINE"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >MAGAZINE</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuMAGAZINE">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <a href="#community">COMMUNITY</a>
+          </nav>
+        </div>
+      </div>
+      <div id="slider " class="container-2 mt-1">
+        <div class="swiper-container slide-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/slides/BESTCHOICE.jpg"
+                alt=""
+                style="max-width:1240px; overflow:hidden;"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/slides/LIXIFAVORITES-WEB-V2.jpg"
+                alt=""
+                style="max-width:1240px; overflow:hidden;"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/slides/LUSTRE_FOUNDATION_WEB_V2.jpg"
+                alt=""
+                style="max-width:1240px;overflow:hidden;"
+              />
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div id="hotdeal" class="container mt-5 text-center">
+        <span class="title">☆ HOT DEAL ☆</span>
+        <div class="swiper-container hotdeal mt-3" id="productHotDeal">
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-6" style="padding-right:3px;">
+            <img
+              src="./images/banners/Screen_Shot_2019-01-02_at_11.50.27.png"
+              alt=""
+              width="100%"
+            />
+          </div>
+          <div class="col-6" style="padding-left:3px;">
+            <img src="./images/banners/bill1.5.jpg" alt="" width="100%" />
+          </div>
+        </div>
+      </div>
+      <div id="hot" class="container mt-5 text-center">
+        <span class="title">Box Bán Chạy</span>
+        <div class="swiper-container hot mt-3" id="productHot">
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="container mt-5 text-center">
+        <span class="title">Vivi Magazine</span>
+        <div class="row">
+          <div class="col-3">
+            <div class="card ">
+              <img
+                src="./images/banners/cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-3">
-            <div class="d-inline ml-4">
-              <span class="align-middle sign-in" style="line-height:38px;">Đăng nhập / Đăng ký</span>
+            <div class="card ">
+              <img
+                src="./images/banners/magazine-peat-cover-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-            <div class="d-inline ml-5">
-              <img src="./images/icon/shopping-bag.svg" alt="" width="26px" height="100%" class="">
+          </div>
+          <div class="col-3">
+            <div class="card ">
+              <img
+                src="./images/banners/okame_peat_2_cover.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card ">
+              <img
+                src="./images/banners/okame_skincare_review_quoc_te.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <nav class="mt-4 dropdown">
-          <a href="#" role="button" class="dropdown-toggle" id="dropdownMenuShop" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">SHOP</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuShop">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-          <a href="#new-beauty-box" class="dropdown-toggle" id="dropdownMenuNEW" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">NEW</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuNEW">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-          <a href="#" class="dropdown-toggle" id="dropdownMenuBESTDEALS" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">BEST DEALS</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuBESTDEALS">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-          <a href="#">BRAND</a>
-          <a href="#magazine" class="dropdown-toggle" id="dropdownMenuMAGAZINE" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">MAGAZINE</a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuMAGAZINE">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-          <a href="#community">COMMUNITY</a>
-        </nav>
       </div>
-    </div>
-    <div id="slider " class="container-2 mt-1">
-      <div class="swiper-container slide-banner">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./images/slides/BESTCHOICE.jpg" alt="" style="max-width:1240px; overflow:hidden;"></div>
-          <div class="swiper-slide"><img src="./images/slides/LIXIFAVORITES-WEB-V2.jpg" alt="" style="max-width:1240px; overflow:hidden;"></div>
-          <div class="swiper-slide"><img src="./images/slides/LUSTRE_FOUNDATION_WEB_V2.jpg" alt="" style="max-width:1240px;overflow:hidden;"></div>
+      <div id="new" class="container mt-5 text-center">
+        <span class="title">Mua Lẻ Mới Nhất</span>
+        <div class="swiper-container new mt-3" id="productNew">
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      </div>
+      <div class="container mt-5 text-center">
+        <span class="title">Thương Hiệu Nổi Bật</span>
+        <div class="row">
+          <div class="col-3" style="padding-right:6px;">
+            <img src="./images/banners/box-5-1.jpg" alt="" width="100%" height="400px"/>
+          </div>
+          <div class="col-3" style="padding-left:3px;padding-right:3px">
+            <img src="./images/banners/box-5-2.jpg" alt="" width="100%" height="400px"/>
+          </div>
+          <div class="col-3" style="padding-left:3px;padding-right:3px">
+            <img src="./images/banners/brand-1.jpg" alt="" width="100%" height="400px"/>
+          </div>
+          <div class="col-3" style="padding-left:6px">
+            <img src="./images/banners/brand-3.jpg" alt="" width="100%" height="400px"/>
+          </div>
+        </div>
+      </div>
+      <div id="footer" style="background: black;height: 300px;" class="mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="hotdeal" class="container mt-5 text-center">
-      <span class="title">☆ HOT DEAL ☆</span>
-      <div class="swiper-container hotdeal mt-3" id="productHotDeal">
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-    <div id="hot" class="container mt-5 text-center">
-      <span class="title">Box Bán Chạy</span>
-      <div class="swiper-container hot mt-3" id="productHot">
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-    <div id="new" class="container mt-5 text-center">
-      <span class="title">Mua Lẻ Mới Nhất</span>
-      <div class="swiper-container new mt-3" id="productNew">
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-  </div>
 
-
-
-  <script src="./js/jquery-3.3.1.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/swiper.min.js"></script>
-  <script src="./data/data.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
-    showProduct()
-    showProduct('productHot','hot')
-    showProduct('productNew','new')
-  </script>
-</body>
-
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./data/data.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      showProduct();
+      showProduct("productHot", "hot");
+      showProduct("productNew", "new");
+    </script>
+  </body>
 </html>
-
 
 <!-- 
         <div class="swiper-wrapper" >
