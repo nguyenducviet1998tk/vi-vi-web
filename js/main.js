@@ -1,3 +1,4 @@
+// khởi tạo slide của trang chủ
 var swiper = new Swiper('.slide-banner', {
     autoplay: {
         delay: 5000,
@@ -14,6 +15,7 @@ var swiper = new Swiper('.slide-banner', {
     },
 });
 
+// hàm dùng để tính toán và chấm mỗi 3 chữ số
 const numberWithCommas = x => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
@@ -25,7 +27,7 @@ const numberWithDots = x => {
     }
 };
 
-
+// Hàm dùng để hiển thị sản phẩm ở trang chủ
 function showProduct(id = 'productHotDeal', root = 'hotdeal', limit = 20) {
     let arr = ''
     for (let i = 0; i < limit; i++) {
@@ -80,7 +82,7 @@ function showProduct(id = 'productHotDeal', root = 'hotdeal', limit = 20) {
         },
     });
 }
-
+// hiển thị đánh giá vào sản phẩm
 function showStartRate(params, link = './') {
     var rating = "";
     for (let j = 1; j <= 5; j++) {
@@ -103,6 +105,8 @@ function showStartRate(params, link = './') {
     return rating
 }
 
+
+// dùng để thay đổi màu ô tìm kiếm 
 function changerColorBorder(params) {
     if (params) {
         document.getElementById('iconSearch').style = "border-color: #ff2b70;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
@@ -111,6 +115,7 @@ function changerColorBorder(params) {
     }
 }
 
+// lấy sản phẩm theo số id
 function getData(params) {
     for (let i = 0; i < data.length; i++) {
         if (data[i].id == params) {
@@ -120,6 +125,7 @@ function getData(params) {
     }
 }
 
+// hiển thị chi tiết sản phẩm ở trang chi tiết
 function detail(params) {
     let hash = location.hash;
     let id = hash.split("#");
@@ -195,6 +201,8 @@ function detail(params) {
     </div>
   </div>`
 }
+
+// kiểm tra và biến nút thêm sản phẩm thành đã thêm
 function checkProduct(params = 1){
     if (typeof (Storage) !== "undefined") {
         if (localStorage.getItem('cart') == null) {
@@ -210,6 +218,9 @@ function checkProduct(params = 1){
         return str;
     } 
 }
+
+
+// thêm sản phẩm vào giỏ hàng, thêm id của sản phẩm vào bộ nhớ trình duyệt ( localStorage )
 function addProduct(params = 1) {
     if (typeof (Storage) !== "undefined") {
         if (localStorage.getItem('cart') == null) {
@@ -221,6 +232,9 @@ function addProduct(params = 1) {
         location.reload();
     } 
 }
+
+
+// xóa toàn bộ local
 function deleteLocal() {
     if (typeof (Storage) !== "undefined") {
         console.log(localStorage.getItem('cart'))
@@ -235,6 +249,7 @@ function deleteLocal() {
     } 
 }
 
+// hiển thị sản phẩm ở trong giỏ hàng
 function showCart(link='./') {
     if (typeof (Storage) !== "undefined") {
         if (localStorage.getItem('cart') == null) {
@@ -257,6 +272,7 @@ function showCart(link='./') {
     } 
  
 }
+// hiển thị số sản phẩm trong giỏ hàng
 function updateCart() {
     if (typeof (Storage) !== "undefined") {
         if (localStorage.getItem('cart') == null) {
