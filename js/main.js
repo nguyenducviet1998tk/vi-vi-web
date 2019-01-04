@@ -33,7 +33,7 @@ function showProduct(id = 'productHotDeal', root = 'hotdeal', limit = 20) {
         console.log(idProduct)
         temp = `
         <div class="swiper-slide">
-        <a href="/pages/details.html#` + data[idProduct].id + `" style="text-decoration: none;color:black">
+        <a href="./pages/details.html#` + data[idProduct].id + `" style="text-decoration: none;color:black">
         <img src="./images/` + data[idProduct].image + `" alt="" width="100%">
         <div class="row">
           <div class="col-10 text-left">
@@ -110,33 +110,41 @@ function changerColorBorder(params) {
         document.getElementById('iconSearch').style = "border-color: #ced4da;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
     }
 }
-
+function getData(params){
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].id==params) {
+            return data[i];
+        }
+        
+    }
+}
 function detail(params) {
     let hash = location.hash;
     let id = hash.split("#");
-    console.log(id);
+    data = getData(id[1])
+    console.log(data)
     document.getElementById('detail').innerHTML = ` <div class="top-overview row">
     <div class="col-md-8">
-      <img src="../images/`+data[id[1]].image+`" width="100%" alt="" />
+      <img src="../images/`+data.image+`" width="100%" height="495px" alt="" />
     </div>
     <div class="col-md-4">
-      <h2>`+data[id[1]].name+`</h2>
+      <h2>`+data.name+`</h2>
       <div class="row">
-        <div class="col-4"><h2>`+numberWithDots(data[id[1]].price)+`</h2></div>
+        <div class="col-4"><h2>`+numberWithDots(data.price)+`</h2></div>
         <div class="col-4">
           <p
             class="text-center"
             style="margin: 8px; text-decoration: line-through"
           >
-          `+numberWithDots(data[id[1]].original)+`
+          `+numberWithDots(data.original)+`
           </p>
         </div>
       </div>
       <div class="row">
-        <p class="col-6">`+showStartRate(data[id[1]].rate,'../')+` `+data[id[1]].comment+` đánh giá</p>
+        <p class="col-6">`+showStartRate(data.rate,'../')+` `+data.comment+` đánh giá</p>
         <p class="col-1">/</p>
         <p class="col-5">
-          <i style="color:#ff3333" class="fas fa-heart"></i> `+data[id[1]].like+`  lovers
+          <i style="color:#ff3333" class="fas fa-heart"></i> `+data.like+`  lovers
         </p>
       </div>
       <div
