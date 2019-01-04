@@ -26,14 +26,14 @@ const numberWithDots = x => {
 };
 
 
-function showProduct(id='productHotDeal',root='hotdeal',limit = 20) {
+function showProduct(id = 'productHotDeal', root = 'hotdeal', limit = 20) {
     let arr = ''
     for (let i = 0; i < limit; i++) {
         let idProduct = Math.floor((Math.random() * (data.length - 1)) + 0)
         console.log(idProduct)
         temp = `
         <div class="swiper-slide">
-        <a href="/pages/details.html#` + data[idProduct].id + `" style="text-decoration: none;color:black">
+        <a href="./pages/details.html#` + data[idProduct].id + `" style="text-decoration: none;color:black">
         <img src="./images/` + data[idProduct].image + `" alt="" width="100%">
         <div class="row">
           <div class="col-10 text-left">
@@ -68,7 +68,7 @@ function showProduct(id='productHotDeal',root='hotdeal',limit = 20) {
     swiperWrapper.classList.add("swiper-wrapper")
     swiperWrapper.innerHTML = arr
     document.getElementById(id).appendChild(swiperWrapper);
-    var swiper = new Swiper('.'+root, {
+    var swiper = new Swiper('.' + root, {
         slidesPerView: 5,
         spaceBetween: 10,
         slidesPerGroup: 5,
@@ -81,7 +81,7 @@ function showProduct(id='productHotDeal',root='hotdeal',limit = 20) {
     });
 }
 
-function showStartRate(params) {
+function showStartRate(params,link='./') {
     var rating = "";
     for (let j = 1; j <= 5; j++) {
         let eli = document.createElement('img');
@@ -89,23 +89,97 @@ function showStartRate(params) {
         eli.height = "14"
         if (Math.ceil(params) >= j) {
             if (params > j) {
-                eli.src = "./images/icon/start.svg"
+                eli.src = link+"images/icon/start.svg"
                 rating += eli.outerHTML;
             } else {
-                eli.src = "./images/icon/start-half.svg"
+                eli.src =link+"images/icon/start-half.svg"
                 rating += eli.outerHTML;
             }
         } else {
-            eli.src = "./images/icon/start-null.svg"
+            eli.src = link+"images/icon/start-null.svg"
             rating += eli.outerHTML;
         }
     }
     return rating
 }
-function  changerColorBorder(params) {
+
+function changerColorBorder(params) {
     if (params) {
-        document.getElementById('iconSearch').style="border-color: #ff2b70;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+        document.getElementById('iconSearch').style = "border-color: #ff2b70;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
     } else {
-        document.getElementById('iconSearch').style="border-color: #ced4da;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+        document.getElementById('iconSearch').style = "border-color: #ced4da;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
     }
+}
+function getData(params){
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].id==params) {
+            return data[i];
+        }
+        
+    }
+}
+function detail(params) {
+    let hash = location.hash;
+    let id = hash.split("#");
+    data = getData(id[1])
+    console.log(data)
+    document.getElementById('detail').innerHTML = ` <div class="top-overview row">
+    <div class="col-md-8">
+      <img src="../images/`+data.image+`" width="100%" height="495px" alt="" />
+    </div>
+    <div class="col-md-4">
+      <h2>`+data.name+`</h2>
+      <div class="row">
+        <div class="col-4"><h2>`+numberWithDots(data.price)+`</h2></div>
+        <div class="col-4">
+          <p
+            class="text-center"
+            style="margin: 8px; text-decoration: line-through"
+          >
+          `+numberWithDots(data.original)+`
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col-6">`+showStartRate(data.rate,'../')+` `+data.comment+` đánh giá</p>
+        <p class="col-1">/</p>
+        <p class="col-5">
+          <i style="color:#ff3333" class="fas fa-heart"></i> `+data.like+`  lovers
+        </p>
+      </div>
+      <div
+        class="pay-ship"
+        style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px"
+      >
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left; padding: 10px">$</div>
+          <div class="col-11" style="font-size:14px;padding:5px;">
+            Nhận ngay
+            <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
+            phẩm này
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
+          <span class="ti-truck"></span>
+          </div>
+          <div class="col-11" style="padding:5px;font-size:15px">
+            <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
+          <span class="ti-time"></span>
+          </div>
+          <div class="col-11" style="padding:5px; font-size:14px">
+            <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>`
 }

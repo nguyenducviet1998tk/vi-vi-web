@@ -1,84 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="./images/logo-mini.jpg" />
-    <title>Vivibox | Chi tiết sản phẩm</title>
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../images/favicon.ico" />
-    <link rel="stylesheet" href="../themify-icons/themify-icons.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="top-overview row">
-        <div class="col-md-8">
-          <img src="../images/1523329786.jpg" width="100%" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <title>Vivibox | Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body>
+  <div id="navbar" style="z-index: 3">
+    <div class="container pt-3">
+      <div class="row" style="height:38px">
+        <div class="col-2">
+          <h3 class="m-0 p-0" style="letter-spacing: 5px"><a href="../index.html" style="text-decoration: none;color: #343a40">VIVIBOX</a></h3>
         </div>
-        <div class="col-md-4">
-          <h2>OKAME Set Shampoo + Conditioner</h2>
-          <div class="row">
-            <div class="col-4"><h2>350.000</h2></div>
-            <div class="col-4">
-              <p
-                class="text-center"
-                style="margin: 8px; text-decoration: line-through"
-              >
-                820.000
-              </p>
+        <div class="col-7">
+          <div class="input-group rounded-pill">
+            <div class="input-group-prepend">
+              <div class="input-group-text rounded-pill" style="border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+                id="iconSearch">
+                <img src="./images/icon/search.svg " alt="" width="15px" />
+              </div>
             </div>
+            <input type="text" class="form-control rounded-pill" style="border-bottom-left-radius:0!important;border-top-left-radius:0!important;border-left:none;background: rgb(247, 249, 250);"
+              placeholder="Tìm kiếm" onfocus="changerColorBorder(true)" onblur="changerColorBorder(false)" />
           </div>
-          <div class="row">
-            <p class="col-6">* * * * * 36 đánh giá</p>
-            <p class="col-1">/</p>
-            <p class="col-5">
-              <i style="color:#ff3333" class="fas fa-heart"></i> 54 lovers
-            </p>
+        </div>
+        <div class="col-3">
+          <div class="d-inline ml-4">
+            <span class="align-middle sign-in" style="line-height:38px;">Đăng nhập / Đăng ký</span>
           </div>
-          <div
-            class="pay-ship"
-            style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px"
-          >
-            <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-              <div class="col-1" style="float:left; padding: 10px">$</div>
-              <div class="col-11" style="font-size:14px;padding:5px;">
-                Nhận ngay
-                <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
-                phẩm này
-              </div>
-            </div>
-
-            <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-              <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
-              <span class="ti-truck"></span>
-              </div>
-              <div class="col-11" style="padding:5px;font-size:15px">
-                <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
-              </div>
-              <div class="clearfix"></div>
-            </div>
-
-            <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-              <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
-              <span class="ti-time"></span>
-              </div>
-              <div class="col-11" style="padding:5px; font-size:14px">
-                <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
-              </div>
-              <div class="clearfix"></div>
-            </div>
+          <div class="d-inline ml-5 position-relative">
+            <img src="../images/icon/shopping-bag.svg" alt="" width="26px" height="38px" class="position-absolute" />
+            <span class="position-absolute rounded-circle mt-4 ml-3" style="background: #ff2b70;color:white;height: 20px;width: 20px;line-height: 19px;text-indent:7px;font-size: 12px;">5</span>
           </div>
         </div>
       </div>
+      <nav class="mt-4 dropdown">
+        <a href="#" role="button" class="dropdown-toggle" id="dropdownMenuShop" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">SHOP</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuShop">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <a href="#new-beauty-box" class="dropdown-toggle" id="dropdownMenuNEW" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">NEW</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuNEW">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <a href="#" class="dropdown-toggle" id="dropdownMenuBESTDEALS" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">BEST DEALS</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuBESTDEALS">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <a href="#">BRAND</a>
+        <a href="#magazine" class="dropdown-toggle" id="dropdownMenuMAGAZINE" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">MAGAZINE</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuMAGAZINE">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <a href="#community">COMMUNITY</a>
+      </nav>
     </div>
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/main.js"></script>
-  </body>
+  </div>
+  <div class="container mt-3" id="detail">
+      <div class="top-overview row">
+          <div class="col-md-8">
+            <img src="../images/1523329786.jpg" width="100%" alt="" />
+          </div>
+          <div class="col-md-4">
+            <h2>OKAME Set Shampoo + Conditioner</h2>
+            <div class="row">
+              <div class="col-4">
+                <h2>350.000</h2>
+              </div>
+              <div class="col-4">
+                <p class="text-center" style="margin: 8px; text-decoration: line-through">
+                  820.000
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p class="col-6">* * * * * 36 đánh giá</p>
+              <p class="col-1">/</p>
+              <p class="col-5">
+                <i style="color:#ff3333" class="fas fa-heart"></i> 54 lovers
+              </p>
+            </div>
+            <div class="pay-ship" style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px">
+              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+                <div class="col-1" style="float:left; padding: 10px">$</div>
+                <div class="col-11" style="font-size:14px;padding:5px;">
+                  Nhận ngay
+                  <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
+                  phẩm này
+                </div>
+              </div>
+      
+              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+                <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
+                  <span class="ti-truck"></span>
+                </div>
+                <div class="col-11" style="padding:5px;font-size:15px">
+                  <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
+                </div>
+                <div class="clearfix"></div>
+              </div>
+      
+              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+                <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
+                  <span class="ti-time"></span>
+                </div>
+                <div class="col-11" style="padding:5px; font-size:14px">
+                  <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-6 pr-1" >
+                <button type="button" class="btn btn-danger btn-block">Thêm vào giỏ</button>
+              </div>
+              <div class="col-6 pl-1">
+                  <button type="button" class="btn btn-light btn-block ">Yêu thích</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/swiper.min.js"></script>
+  <script src="../data/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    // detail()
+  </script>
+</body>
+
 </html>
+
+<!-- <div class="top-overview row">
+    <div class="col-md-8">
+      <img src="../images/1523329786.jpg" width="100%" alt="" />
+    </div>
+    <div class="col-md-4">
+      <h2>OKAME Set Shampoo + Conditioner</h2>
+      <div class="row">
+        <div class="col-4">
+          <h2>350.000</h2>
+        </div>
+        <div class="col-4">
+          <p class="text-center" style="margin: 8px; text-decoration: line-through">
+            820.000
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="col-6">* * * * * 36 đánh giá</p>
+        <p class="col-1">/</p>
+        <p class="col-5">
+          <i style="color:#ff3333" class="fas fa-heart"></i> 54 lovers
+        </p>
+      </div>
+      <div class="pay-ship" style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px">
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left; padding: 10px">$</div>
+          <div class="col-11" style="font-size:14px;padding:5px;">
+            Nhận ngay
+            <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
+            phẩm này
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
+            <span class="ti-truck"></span>
+          </div>
+          <div class="col-11" style="padding:5px;font-size:15px">
+            <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+          <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
+            <span class="ti-time"></span>
+          </div>
+          <div class="col-11" style="padding:5px; font-size:14px">
+            <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->

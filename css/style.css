@@ -101,3 +101,11 @@ nav a:hover {
     outline: 0;
     box-shadow: 0 0 0 ;
 }
+.btn-danger{
+    background: #ff2b70;
+    border-color: #ff2b70;
+}
+.btn-danger:hover{
+    background: #e42766;
+    border-color: #e42766;
+}
