@@ -102,3 +102,10 @@ function showStartRate(params) {
     }
     return rating
 }
+function  changerColorBorder(params) {
+    if (params) {
+        document.getElementById('iconSearch').style="border-color: #ff2b70;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+    } else {
+        document.getElementById('iconSearch').style="border-color: #ced4da;border-bottom-right-radius:0!important;border-top-right-radius:0!important;background: rgb(247, 249, 250)"
+    }
+}
