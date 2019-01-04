@@ -38,9 +38,10 @@
             <span class="align-middle sign-in" style="line-height:38px;">Đăng nhập / Đăng ký</span>
           </div>
           <div class="d-inline ml-5 position-relative">
-            <img src="../images/icon/shopping-bag.svg" alt="" width="26px" height="38px" class="position-absolute" data-toggle="modal" data-target="#exampleModalLong"
-            style="cursor: pointer;"/>
-            <span class="position-absolute rounded-circle mt-4 ml-3" style="background: #ff2b70;color:white;height: 20px;width: 20px;line-height: 19px;text-indent:7px;font-size: 12px;"  id="cartNumber">0</span>
+            <img src="../images/icon/shopping-bag.svg" alt="" width="26px" height="38px" class="position-absolute"
+              data-toggle="modal" data-target="#exampleModalLong" style="cursor: pointer;" />
+            <span class="position-absolute rounded-circle mt-4 ml-3" style="background: #ff2b70;color:white;height: 20px;width: 20px;line-height: 19px;text-indent:7px;font-size: 12px;"
+              id="cartNumber">0</span>
           </div>
         </div>
       </div>
@@ -79,89 +80,410 @@
     </div>
   </div>
   <div class="container mt-3" id="detail">
-      <div class="top-overview row">
-          <div class="col-md-8">
-            <img src="../images/1523329786.jpg" width="100%" alt="" />
+    <div class="top-overview row">
+      <div class="col-md-8">
+        <img src="../images/1523329786.jpg" width="100%" alt="" />
+      </div>
+      <div class="col-md-4">
+        <h2>OKAME Set Shampoo + Conditioner</h2>
+        <div class="row">
+          <div class="col-4">
+            <h2>350.000</h2>
           </div>
-          <div class="col-md-4">
-            <h2>OKAME Set Shampoo + Conditioner</h2>
-            <div class="row">
-              <div class="col-4">
-                <h2>350.000</h2>
-              </div>
-              <div class="col-4">
-                <p class="text-center" style="margin: 8px; text-decoration: line-through">
-                  820.000
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <p class="col-6">* * * * * 36 đánh giá</p>
-              <p class="col-1">/</p>
-              <p class="col-5">
-                <i style="color:#ff3333" class="fas fa-heart"></i> 54 lovers
-              </p>
-            </div>
-            <div class="pay-ship" style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px">
-              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-                <div class="col-1" style="float:left; padding: 10px">$</div>
-                <div class="col-11" style="font-size:14px;padding:5px;">
-                  Nhận ngay
-                  <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
-                  phẩm này
-                </div>
-              </div>
-      
-              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-                <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
-                  <span class="ti-truck"></span>
-                </div>
-                <div class="col-11" style="padding:5px;font-size:15px">
-                  <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
-                </div>
-                <div class="clearfix"></div>
-              </div>
-      
-              <div style="border-bottom: 1px solid rgb(229, 231, 234);">
-                <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
-                  <span class="ti-time"></span>
-                </div>
-                <div class="col-11" style="padding:5px; font-size:14px">
-                  <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-6 pr-1" >
-                <button type="button" class="btn btn-danger btn-block" onclick="addProduct()">Thêm vào giỏ</button>
-              </div>
-              <div class="col-6 pl-1">
-                  <button type="button" class="btn btn-light btn-block ">Yêu thích</button>
-              </div>
-            </div>
+          <div class="col-4">
+            <p class="text-center" style="margin: 8px; text-decoration: line-through">
+              820.000
+            </p>
           </div>
         </div>
-  </div>
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Giỏ hàng</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+        <div class="row">
+          <p class="col-6">* * * * * 36 đánh giá</p>
+          <p class="col-1">/</p>
+          <p class="col-5">
+            <i style="color:#ff3333" class="fas fa-heart"></i> 54 lovers
+          </p>
+        </div>
+        <div class="pay-ship" style="border-top:1px solid rgb(229, 231, 234); border-left:1px solid rgb(229, 231, 234); border-bottom: 1px solid rgb(229, 231, 234);border-right:1px solid rgb(229, 231, 234);border-radius: 3px">
+          <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+            <div class="col-1" style="float:left; padding: 10px">$</div>
+            <div class="col-11" style="font-size:14px;padding:5px;">
+              Nhận ngay
+              <span style="font-weight:bold">350 Lixicoins </span> khi mua sản
+              phẩm này
+            </div>
           </div>
-          <div class="modal-body" id="cart-popup">
-           
+
+          <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+            <div class="col-1" style="float:left; padding: 15px 20px 20px 8px">
+              <span class="ti-truck"></span>
+            </div>
+            <div class="col-11" style="padding:5px;font-size:15px">
+              <span style="font-weight:bold">Miễn phí vận chuyển</span> đơn hàng từ 800.000 đ
+            </div>
+            <div class="clearfix"></div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
-            <button type="button" class="btn btn-danger" onclick="deleteLocal()">Thanh toán</button>
+
+          <div style="border-bottom: 1px solid rgb(229, 231, 234);">
+            <div class="col-1" style="float:left;padding: 0px 10px 0px 5px">
+              <span class="ti-time"></span>
+            </div>
+            <div class="col-11" style="padding:5px; font-size:14px">
+              <span style="font-weight:bold">Xem thời gian và phí vận chuyển </span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6 pr-1">
+            <button type="button" class="btn btn-danger btn-block" onclick="addProduct()">Thêm vào giỏ</button>
+          </div>
+          <div class="col-6 pl-1">
+            <button type="button" class="btn btn-light btn-block ">Yêu thích</button>
           </div>
         </div>
       </div>
     </div>
+
+  </div>
+  <div class="rmq-66c30cbc" data-radium="true" style="display: block; width: 100%; max-width: 1170px; margin: 0px auto; padding: 0px;">
+    <div id="product-info-product-detail" data-radium="true" style="width: 100%;">
+      <div class="sticky" data-radium="true" style="height: 60px; font-size: 20px; letter-spacing: -0.5px; line-height: 60px; font-family: trirong-regular, serif; color: rgb(0, 0, 0); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; top: -1px; background: rgba(255, 255, 255, 0.8); z-index: 90; position: relative;">Thông
+        tin<span data-radium="true" style="display: block; position: absolute; height: 4px; width: 25px; background: rgb(0, 0, 0); bottom: 1px;"></span><span
+          data-radium="true" style="display: block; position: absolute; height: 1px; width: 100%; background: rgba(0, 0, 0, 0.5); bottom: 1px;"></span></div>
+      <div data-radium="true" style="padding-top: 20px; padding-bottom: 20px;">
+        <div class="user-select-all" data-radium="true">
+          <div data-radium="true" style="margin-bottom: 20px;">
+            <div data-radium="true" style="margin-bottom: 20px;">
+              <div data-radium="true" style="font-size: 15px; line-height: 21px; overflow: hidden; color: rgba(0, 0, 0, 0.8); text-align: justify; margin-bottom: 20px; display: inline;">These
+                single eyeshadows are the perfect introduction for someone who's new to makeup. Highly pigmented and
+                effortlessly blend-able, these shadows look great on their own or paired with one another. Once
+                applied, they are smudge-proof and stay vibrant all day long.<br></div>
+            </div>
+            <div data-radium="true" style="border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.14) 0px 0px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 1px -1px;">
+              <div data-radium="true">
+                <div data-radium="true" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div data-radium="true" style="font-size: 15px; font-family: avenir-next-demi-bold, arial; color: rgb(0, 0, 0); padding-left: 20px;">Thành
+                    phần</div>
+                  <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin: 0px; color: rgb(77, 78, 79); transition: all 0.3s ease-out 0s; transform: rotate(180deg);"><svg
+                      viewBox="0 0 100 8" data-radium="true" style="width: 13px;">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-645.000000, -1553.000000)" fill="#4D4E4F">
+                          <rect id="Rectangle-4" x="645" y="1553" width="100" height="8" rx="4"></rect>
+                        </g>
+                      </g>
+                    </svg></div>
+                </div>
+                <div data-radium="true" style="height: 100%; opacity: 1; visibility: visible; transition: all 0.3s ease-out 0s; display: block;">
+                  <div data-radium="true" style="padding-top: 10px; transition: all 0.3s ease-out 0s; border-bottom: 1px solid rgb(240, 242, 245); padding-bottom: 10px;">
+                    <div data-radium="true" style="display: flex; margin-bottom: 20px;"><a class="active" aria-current="true"
+                        href="/shop/lustre-pro-pressed-shadow-victoria-sienna" style="width: 20%; margin-right: 10px;">
+                        <div data-radium="true" style="padding-top: 50%; width: 100%; background-image: url(&quot;https://upload.lixibox.com/system/pictures/files/000/032/086/medium/1525970211.jpg&quot;); background-position: center center; background-repeat: no-repeat; background-size: contain;"></div>
+                      </a>
+                      <div data-radium="true" style="flex: 10 1 0%;">
+                        <div data-radium="true" style="text-align: justify; font-size: 13px; line-height: 18px; color: rgba(0, 0, 0, 0.8); padding-right: 30px;">Talc,
+                          Dimethylimodazolidinone Rice Starch, Mica, Aqua (Water), Magnesium Myristate, Propylene
+                          Glycol, Octyldodecanol, Isopropyl Myristate, Glyceryl Stearate, Phenoxyethanol, PEG-150,
+                          Silica, Ricinus Communis (Castor) Seed Oil, Cetearyl Alcohol, Quaternium-26, Methylparaben,
+                          Glyceryl Ricinoleate, Ethylparaben, Copernicia, Cerifera Cera (Copernicia Cerifera (Carnauba)
+                          Wax), Candelilla Cera (Euphorbia Cerifera (Candelilla) Wax), Sodium Cetearyl Sulfate, Stearic
+                          Acid, Propylparaben, Cera Microcristallina (Microcrystalline Wax), Tetrahydroxypropyl
+                          Ethylenediamine, Paraffinum Liquidum (Mineral Oil), Cetyl Alcohol, Cera Alba (Beeswax),
+                          Parfum (Fragrance) and may contain: [+/- Titanium Dioxide CI 77891, Iron Oxide CI 77491, CI
+                          77492, CI 77499, Ultramarines CI 77007, Carmine CI 75470, Chromium Hydroxide Green CI 77289,
+                          Yellow 5 Lake CI 19140, Chromium Oxide Green CI 77288, Ferric Ferrocyanide CI &amp;&amp;510,
+                          Manganese Violet CI 77742, Blue 1 Lake CI 42090, Bismuth Oxychloride CI 77163, Red 40 Lake CI
+                          16035, Black 2 CI 77266 (nano), (EU seulement/only: CI 73015, CI 12085, CI 45380, CI 15850,
+                          CI 45410, CI 15985, CI 77120)]. May contain carmine as color additive. </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>#product-info-tab-gradient{background: linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 70%);background:-moz-linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 70%);background:-webkit-linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 70%);}</style>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rmq-66c30cbc" data-radium="true" style="display: block; width: 100%; max-width: 1170px; margin: 0px auto; padding: 0px;">
+    <div id="feedback-product-detail" data-radium="true" style="width: 100%;">
+      <div class="sticky" data-radium="true" style="height: 60px; font-size: 20px; letter-spacing: -0.5px; line-height: 60px; font-family: trirong-regular, serif; color: rgb(0, 0, 0); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; top: -1px; background: rgba(255, 255, 255, 0.8); z-index: 90; position: relative;">Đánh
+        giá<span data-radium="true" style="display: block; position: absolute; height: 4px; width: 25px; background: rgb(0, 0, 0); bottom: 1px;"></span><span
+          data-radium="true" style="display: block; position: absolute; height: 1px; width: 100%; background: rgba(0, 0, 0, 0.5); bottom: 1px;"></span></div>
+      <div data-radium="true" style="padding-top: 20px; padding-bottom: 20px;">
+        <div data-radium="true">
+          <div data-radium="true" style="min-height: 280px;">
+            <div data-radium="true" style="position: sticky; top: 90px; display: flex; justify-content: flex-end;">
+              <div data-radium="true" style="width: 30%;">
+                <div data-radium="true" style="font-size: 20px; font-family: avenir-next-demi-bold, arial; margin-bottom: 10px;">Đánh
+                  giá sản phẩm</div>
+                <div data-radium="true" style="display: flex; align-items: center; margin-bottom: 20px;">
+                  <div data-radium="true" style="font-size: 35px; font-family: avenir-next-demi-bold, arial;">5/5</div>
+                  <div data-radium="true" style="display: flex; flex-direction: column; margin-left: 20px;">
+                    <rating-star data-radium="true" style="display: flex; justify-content: flex-start; margin-left: -2px; height: 20px; margin-right: 10px;">
+                      <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                          viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                              <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                            </g>
+                          </g>
+                        </svg></div>
+                      <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                          viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                              <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                            </g>
+                          </g>
+                        </svg></div>
+                      <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                          viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                              <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                            </g>
+                          </g>
+                        </svg></div>
+                      <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                          viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                              <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                            </g>
+                          </g>
+                        </svg></div>
+                      <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                          viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                              <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                            </g>
+                          </g>
+                        </svg></div>
+                    </rating-star><span data-radium="true" style="font-size: 15px;">2 đánh giá</span>
+                  </div>
+                </div>
+                <div data-radium="true" style="display: flex; justify-content: space-between; flex-direction: column;">
+                  <div data-radium="true" style="font-size: 14px; color: rgb(77, 78, 79); margin-bottom: 10px;">Chia sẻ
+                    suy nghĩ và đánh giá của bạn về sản phẩm</div>
+                  <div data-radium="true" style="width: 100%; text-align: center;">
+                    <div data-radium="true" style="display: block; color: rgb(0, 0, 0); width: 180px; height: 40px; line-height: 40px; padding-left: 20px; padding-right: 20px; border-radius: 3px; border: 1px solid rgb(46, 62, 78); font-size: 14px; cursor: pointer;">Đánh
+                      giá ngay</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-radium="true" style="width: 70%; padding-right: 30px; margin-top: -189px;">
+              <div data-radium="true" style="padding-top: 15px; padding-bottom: 15px;">
+                <div data-radium="true" style="display: flex; justify-content: flex-start; margin-bottom: 15px;">
+                  <div data-radium="true" style="background-image: url(&quot;https://upload.lixibox.com/system/users/avatars/000/051/723/medium/avatar-1478410421.8216.jpg%22&quot;); width: 40px; min-width: 40px; height: 40px; border-radius: 25px; margin-right: 10px; background-position: center center; background-size: cover; background-color: rgb(229, 231, 234);"></div>
+                  <div data-radium="true" style="flex: 10 1 0%; display: inline-block; flex-direction: column; overflow: hidden; text-overflow: ellipsis; justify-content: center;">
+                    <div data-radium="true" style="margin-bottom: 10px; display: flex; flex-wrap: wrap;">
+                      <rating-star data-radium="true" style="display: flex; justify-content: flex-start; margin-left: -2px; height: 20px; margin-right: 10px;">
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                      </rating-star>
+                      <div class="verify-tooltip" data-radium="true" style="display: flex; vertical-align: top; color: rgb(43, 168, 50); font-family: avenir-next-demi-bold, arial; position: relative; margin-right: 10px;">
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; margin: 0px 5px 0px 0px; color: rgb(43, 168, 50);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-413.000000, -3172.000000)" fill="#2ba832" fill-rule="nonzero">
+                                <g transform="translate(413.000000, 3172.000000)">
+                                  <path d="M99.7942001,61.4359589 C100.275424,62.6983079 99.8941948,64.1356359 98.8442512,64.9855341 L89.3260125,72.6971113 L87.4011159,84.8019127 C87.1886273,86.1330034 86.1386837,87.1828778 84.8075052,87.3953524 L72.7019055,89.320122 L64.9898198,98.8377331 C64.3836023,99.5876433 63.477401,99.9938447 62.5587004,99.9938447 C62.1837205,99.9938447 61.802491,99.925103 61.4400105,99.7876194 L49.9968752,95.4006444 L38.5599895,99.7876194 C37.2975574,100.28131 35.8663842,99.8938567 35.0101802,98.8377331 L27.2980945,89.320122 L15.1924948,87.3953524 C13.8613163,87.1828778 12.8113727,86.1330034 12.5988841,84.8019127 L10.6739875,72.6971113 L1.15574884,64.9855341 C0.105805243,64.1356359 -0.275424278,62.7045571 0.205799872,61.4422082 L4.59306419,49.9998275 L0.205799872,38.5574468 C-0.275424278,37.2950978 0.105805243,35.8640191 1.15574884,35.0141208 L10.6739875,27.3025436 L12.5988841,15.1977422 C12.8113727,13.8666515 13.8613163,12.8167772 15.1924948,12.6043026 L27.2980945,10.6795329 L35.0101802,1.16192188 C35.8601346,0.105798266 37.2913077,-0.275406115 38.5537399,0.212035553 L49.9968752,4.59901057 L61.4337608,0.205786301 C62.7024426,-0.275406115 64.1336158,0.105798266 64.9835701,1.15567263 L72.6956558,10.6732837 L84.8012555,12.5980533 C86.132434,12.8105279 87.1823776,13.8604023 87.3948662,15.191493 L89.3197628,27.2962944 L98.8380015,35.0078716 C99.8879451,35.8577698 100.275424,37.2950978 99.7879505,38.5574468 L95.4006861,49.9998275 L99.7942001,61.4359589 Z M23.5282553,50.0800911 C21.8729487,51.7311685 21.358437,54.0804857 23.0137436,55.7315631 L38.9230515,71.4710914 C39.7507048,72.2966301 40.7852714,72.7093995 41.9232947,72.7093995 L42.130208,72.7093995 C43.2682313,72.6062071 44.4062546,72.0902454 45.2339078,71.1615144 L75.9141784,33.8705161 C77.3625717,32.1162464 77.6729417,29.7502917 75.9141784,28.2024066 C74.1554152,26.7577138 72.0544289,26.4481368 70.502579,28.2024066 L41.6129247,62.1837809 L29.2609572,49.8546997 C27.6056506,48.2036223 25.1835618,48.4290137 23.5282553,50.0800911 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg></div><span data-radium="true" style="background: rgb(43, 168, 50); font-family: avenir-next-demi-bold, arial; color: rgb(255, 255, 255); height: 22px; padding: 0px 10px; border-radius: 11px; position: absolute; display: inline-block; white-space: nowrap; top: 0px; left: 100%; opacity: 0; transition: opacity 0.3s ease-out 0s; font-size: 13px; line-height: 22px;">Đã
+                          mua sản phẩm tại Lixibox.com</span>
+                      </div>
+                      <div data-radium="true" style="font-size: 12px; line-height: 20px; color: rgb(162, 163, 165); padding-left: 3px;">22/12/2018
+                      </div>
+                    </div>
+                    <div data-radium="true" style="font-size: 14px; overflow: hidden; line-height: 22px; text-align: justify; background: rgb(240, 242, 245); padding: 4px 10px; border-radius: 15px; display: inline-block; vertical-align: top;">
+                      <div data-radium="true" style="max-width: 200px; display: inline-block; font-family: avenir-next-demi-bold, arial; vertical-align: top; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-size: 14px; line-height: 22px; margin-right: 5px;">Nghi
+                        Ngô</div>Màu lên chuẩn, không quá nhiều fallout, giá phù hợp
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-radium="true" style="padding-top: 15px; padding-bottom: 15px;">
+                <div data-radium="true" style="display: flex; justify-content: flex-start; margin-bottom: 15px;">
+                  <div data-radium="true" style="background-image: url(&quot;https://upload.lixibox.com/system/users/avatars/000/245/447/medium/picture&quot;); width: 40px; min-width: 40px; height: 40px; border-radius: 25px; margin-right: 10px; background-position: center center; background-size: cover; background-color: rgb(229, 231, 234);"></div>
+                  <div data-radium="true" style="flex: 10 1 0%; display: inline-block; flex-direction: column; overflow: hidden; text-overflow: ellipsis; justify-content: center;">
+                    <div data-radium="true" style="margin-bottom: 10px; display: flex; flex-wrap: wrap;">
+                      <rating-star data-radium="true" style="display: flex; justify-content: flex-start; margin-left: -2px; height: 20px; margin-right: 10px;">
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin: 0px 2px; color: rgb(255, 51, 51);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-813.000000, -1086.000000)" fill="#FF3333">
+                                <path d="M912.915494,1128.68363 C912.658098,1127.47885 911.714311,1126.53223 910.598927,1126.10196 L881.684739,1116.37766 L866.240958,1087.89323 C865.640367,1086.68845 864.353385,1086 863.066403,1086 C861.779422,1086 860.49244,1086.68845 859.891848,1087.89323 L844.533867,1116.29161 L815.533879,1125.06929 C814.332696,1125.41351 813.38891,1126.36012 813.131514,1127.5649 C812.788318,1128.76968 813.131514,1130.06052 813.989501,1131.00713 L833.03683,1151.91866 L825.143343,1181.43577 C824.800148,1182.7266 825.229141,1184.18955 826.258727,1185.05011 C827.288312,1185.99672 828.746891,1186.25489 829.948074,1185.73855 L863.066403,1172.48598 L896.184732,1185.73855 C896.613726,1185.91067 897.04272,1185.99672 897.557513,1185.99672 C898.415501,1185.99672 899.273488,1185.6525 899.959879,1185.05011 C900.989464,1184.1035 901.418458,1182.7266 901.075263,1181.43577 L893.181775,1151.91866 L912.057507,1132.0398 C912.829696,1131.09319 913.172891,1129.88841 912.915494,1128.68363 L912.915494,1128.68363 Z"></path>
+                              </g>
+                            </g>
+                          </svg></div>
+                      </rating-star>
+                      <div class="verify-tooltip" data-radium="true" style="display: flex; vertical-align: top; color: rgb(43, 168, 50); font-family: avenir-next-demi-bold, arial; position: relative; margin-right: 10px;">
+                        <div class="" data-radium="true" style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; margin: 0px 5px 0px 0px; color: rgb(43, 168, 50);"><svg
+                            viewBox="0 0 100 100" data-radium="true" style="width: 15px;">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g transform="translate(-413.000000, -3172.000000)" fill="#2ba832" fill-rule="nonzero">
+                                <g transform="translate(413.000000, 3172.000000)">
+                                  <path d="M99.7942001,61.4359589 C100.275424,62.6983079 99.8941948,64.1356359 98.8442512,64.9855341 L89.3260125,72.6971113 L87.4011159,84.8019127 C87.1886273,86.1330034 86.1386837,87.1828778 84.8075052,87.3953524 L72.7019055,89.320122 L64.9898198,98.8377331 C64.3836023,99.5876433 63.477401,99.9938447 62.5587004,99.9938447 C62.1837205,99.9938447 61.802491,99.925103 61.4400105,99.7876194 L49.9968752,95.4006444 L38.5599895,99.7876194 C37.2975574,100.28131 35.8663842,99.8938567 35.0101802,98.8377331 L27.2980945,89.320122 L15.1924948,87.3953524 C13.8613163,87.1828778 12.8113727,86.1330034 12.5988841,84.8019127 L10.6739875,72.6971113 L1.15574884,64.9855341 C0.105805243,64.1356359 -0.275424278,62.7045571 0.205799872,61.4422082 L4.59306419,49.9998275 L0.205799872,38.5574468 C-0.275424278,37.2950978 0.105805243,35.8640191 1.15574884,35.0141208 L10.6739875,27.3025436 L12.5988841,15.1977422 C12.8113727,13.8666515 13.8613163,12.8167772 15.1924948,12.6043026 L27.2980945,10.6795329 L35.0101802,1.16192188 C35.8601346,0.105798266 37.2913077,-0.275406115 38.5537399,0.212035553 L49.9968752,4.59901057 L61.4337608,0.205786301 C62.7024426,-0.275406115 64.1336158,0.105798266 64.9835701,1.15567263 L72.6956558,10.6732837 L84.8012555,12.5980533 C86.132434,12.8105279 87.1823776,13.8604023 87.3948662,15.191493 L89.3197628,27.2962944 L98.8380015,35.0078716 C99.8879451,35.8577698 100.275424,37.2950978 99.7879505,38.5574468 L95.4006861,49.9998275 L99.7942001,61.4359589 Z M23.5282553,50.0800911 C21.8729487,51.7311685 21.358437,54.0804857 23.0137436,55.7315631 L38.9230515,71.4710914 C39.7507048,72.2966301 40.7852714,72.7093995 41.9232947,72.7093995 L42.130208,72.7093995 C43.2682313,72.6062071 44.4062546,72.0902454 45.2339078,71.1615144 L75.9141784,33.8705161 C77.3625717,32.1162464 77.6729417,29.7502917 75.9141784,28.2024066 C74.1554152,26.7577138 72.0544289,26.4481368 70.502579,28.2024066 L41.6129247,62.1837809 L29.2609572,49.8546997 C27.6056506,48.2036223 25.1835618,48.4290137 23.5282553,50.0800911 Z"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg></div><span data-radium="true" style="background: rgb(43, 168, 50); font-family: avenir-next-demi-bold, arial; color: rgb(255, 255, 255); height: 22px; padding: 0px 10px; border-radius: 11px; position: absolute; display: inline-block; white-space: nowrap; top: 0px; left: 100%; opacity: 0; transition: opacity 0.3s ease-out 0s; font-size: 13px; line-height: 22px;">Đã
+                          mua sản phẩm tại Lixibox.com</span>
+                      </div>
+                      <div data-radium="true" style="font-size: 12px; line-height: 20px; color: rgb(162, 163, 165); padding-left: 3px;">21/11/2018
+                      </div>
+                    </div>
+                    <div data-radium="true" style="font-size: 14px; overflow: hidden; line-height: 22px; text-align: justify; background: rgb(240, 242, 245); padding: 4px 10px; border-radius: 15px; display: inline-block; vertical-align: top;">
+                      <div data-radium="true" style="max-width: 200px; display: inline-block; font-family: avenir-next-demi-bold, arial; vertical-align: top; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-size: 14px; line-height: 22px; margin-right: 5px;">Trang
+                        Linh</div>chất lượng sản phẩm này tốt . tôi cảm thấy hài lòng
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-radium="true" style="width: 100%;">
+                <div data-radium="true" style="display: flex; justify-content: center; flex-wrap: wrap; padding: 10px 20px;"></div>
+              </div>
+            </div>
+          </div>
+          <style>.verify-tooltip:hover span{opacity: 1 !important;}</style>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" style="background: black;color:#e5e5e5" class="mt-4 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 pr-3">
+          <h4 style="letter-spacing: 5px;color: white">VIVIBOX</h4>
+          <p>VIVIBOX.COM là kênh mua sắm mỹ phẩm, làm đẹp hàng đầu Việt Nam được các beauty blogger lựa chọn để giới
+            thiệu sản phẩm họ yêu thích tới khách hàng, người hâm mộ.</p>
+        </div>
+        <div class="col-3 pl-5">
+          <h5 style="color: white">Danh mục Sản phẩm</h5>
+          <ul style="list-style-type: none;line-height: 35px" class="p-0">
+            <li>Trang điểm</li>
+            <li>Dưỡng da</li>
+            <li>Cơ thể</li>
+            <li>Tóc</li>
+          </ul>
+        </div>
+        <div class="col-3 pl-4">
+          <h5 style="color: white">Thông tin hướng dẫn</h5>
+          <ul style="list-style-type: none;line-height: 35px" class="p-0">
+            <li>Trang điểm</li>
+            <li>Dưỡng da</li>
+            <li>Cơ thể</li>
+            <li>Tóc</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h5 style="color: white">Tải ứng dụng VIVIBOX</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div style="width: 100%; background: rgba(0, 0, 0, 0.9); text-align: center;">
+    <p style="display: inline-block; font-family: avenir-next-regular, arial; color: rgba(255, 255, 255, 0.5); font-size: 13px;">©
+      Vivibox 2019 - Bản quyền trang Web thuộc về Vi Vi</p>
+  </div>
+  </div>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Giỏ hàng</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="cart-popup">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+          <button type="button" class="btn btn-danger" onclick="deleteLocal()">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="../js/jquery-3.3.1.min.js"></script>
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.js"></script>
@@ -171,6 +493,7 @@
   <script>
     detail()
     updateCart()
+    showCart('../')
   </script>
 </body>
 
